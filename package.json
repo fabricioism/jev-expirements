@@ -1,0 +1,11 @@
+{
+  "name": "jev-experiments",
+  "private": true,
+  "packageManager": "pnpm@11.26.0",
+  "scripts": {
+    "dev:chat-lab": "pnpm --filter @jev/chat-lab dev",
+    "build:chat-lab": "pnpm --filter @jev/chat-lab build",
+    "check:chat-lab": "pnpm --filter @jev/chat-lab typecheck",
+    "start:chat-lab": "pnpm --filter @jev/chat-lab start"
+  }
+}
