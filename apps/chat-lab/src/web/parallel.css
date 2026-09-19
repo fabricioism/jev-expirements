@@ -1,0 +1,105 @@
+.parallel-active .topbar { height: 48px; }
+.parallel-active .page-content { padding-top: 22px; }
+.parallel-active .page-heading { margin-bottom: 18px; }
+.parallel-active .page-heading h1 { font-size: 25px; }
+.parallel-active .page-heading .eyebrow { display: none; }
+.parallel-intro { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: 2px 0 14px; }
+.parallel-intro h2 { font-size: 18px; letter-spacing: -.4px; }
+.parallel-intro p { font-size: 11px; color: #848da0; line-height: 1.7; margin-top: 5px; }
+.parallel-context { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 14px; color: #8b83a0; font-size: 10px; }
+.parallel-context > span { display: flex; align-items: center; gap: 6px; }
+.parallel-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+.parallel-column { min-width: 0; border: 1px solid #e4e7ef; background: white; border-radius: 12px; overflow: hidden; }
+.parallel-column.jev { border-color: #dfd3f6; }
+.parallel-column-header { display: flex; gap: 10px; align-items: center; padding: 17px; border-bottom: 1px solid #ececf4; }
+.parallel-column-header h3 { font-size: 13px; }
+.parallel-column-header p { font-size: 10px; color: #9195a7; margin-top: 5px; line-height: 1.5; }
+.turn-count { margin-left: auto; font-size: 9px; color: #9a92ae; background: #f7f5fb; padding: 5px 7px; border-radius: 5px; white-space: nowrap; }
+.parallel-chat-body { height: clamp(240px, calc(100dvh - 630px), 480px); padding: 16px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #ded9ec transparent; background: radial-gradient(ellipse at 50% 40%, #fcfbff 0, white 75%); }
+.parallel-chat-body .message-row { margin: 14px 0 24px; }
+.parallel-chat-body .message-content { max-width: 93%; }
+.parallel-chat-body .message-bubble { font-size: 12px; padding: 10px 12px; }
+.parallel-chat-body .message-meta { flex-wrap: wrap; }
+.parallel-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 13px; height: 100%; padding: 18px; color: #b7adc9; }
+.parallel-empty h4 { margin: 0; color: #666079; font-size: 13px; font-weight: 550; }
+.parallel-empty p { font-size: 11px; line-height: 1.9; color: #9994a7; max-width: 270px; }
+.parallel-typing { display: flex; align-items: center; gap: 8px; font-size: 10px; color: #a48fbf; padding: 13px 0; }
+.inspect-turn { display: inline-flex; align-items: center; gap: 4px; font-size: 9px; color: #8e7bae; padding: 3px 5px; border: 1px solid #ece6f6; border-radius: 4px; background: white; }
+.inspect-turn:hover { background: #f3eefc; }
+.parallel-handoff { display: flex; gap: 8px; align-items: flex-start; padding: 10px 15px; background: #fffbf3; color: #a48c5d; border-top: 1px solid #f1e8d4; font-size: 10px; line-height: 1.7; }
+.parallel-inspector { border: 1px solid #eae6f2; border-radius: 10px; background: #fcfbfe; min-width: 0; }
+.parallel-inspector.jev { border-color: #dfd3f6; }
+.parallel-engineering-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; color: #9b86b7; margin: 24px 0 12px; }
+.parallel-engineering-heading h3 { font-size: 12px; font-weight: 600; }
+.parallel-engineering-heading > span { font-size: 10px; margin-left: auto; color: #a49bad; }
+.parallel-inspector > summary { display: flex; align-items: center; gap: 7px; padding: 13px 16px; color: #8d7ba6; list-style: none; font-size: 10px; }
+.parallel-inspector > summary::-webkit-details-marker { display: none; }
+.parallel-inspector > summary strong { font-weight: 550; }
+.parallel-inspector > summary span { margin-left: auto; font-size: 9px; }
+.parallel-inspector[open] > summary > svg:last-child { transform: rotate(180deg); }
+.parallel-inspector-body { padding: 0 17px 17px; max-height: 360px; overflow: auto; scrollbar-width: thin; }
+.parallel-inspector-empty { padding: 2px 17px 17px; font-size: 10px; color: #a29aad; line-height: 1.8; }
+.turn-selector { display: flex; flex-direction: column; gap: 7px; color: #918699; font-size: 9px; margin-bottom: 12px; }
+.turn-selector select { width: 100%; min-width: 0; padding: 8px; border: 1px solid #e4dcef; border-radius: 6px; background: white; color: #70647f; font: inherit; font-size: 10px; }
+.inspected-prompt { padding: 9px 11px; border-left: 2px solid #d8caef; background: #f5f1fa; margin: 10px 0 14px; }
+.inspected-prompt > span { font-size: 9px; color: #ac9abd; }
+.inspected-prompt p { font-size: 11px; line-height: 1.7; color: #82718f; margin-top: 5px; overflow-wrap: anywhere; }
+.technical-stats { display: flex; flex-direction: column; gap: 9px; margin: 15px 0; font-size: 10px; color: #958b9f; }
+.technical-stats > div { display: flex; justify-content: space-between; gap: 12px; }
+.technical-stats dd { margin: 0; color: #796c89; white-space: nowrap; }
+.solo-action { display: flex; justify-content: space-between; align-items: center; gap: 10px; font-size: 10px; color: #94889d; border-top: 1px solid #eae4f2; padding-top: 13px; }
+.parallel-composer { background: #fff; border: 1px solid #dfd7ef; border-radius: 11px; padding: 15px 18px; margin-top: 16px; box-shadow: 0 5px 22px #33215b0b; }
+.parallel-composer-heading { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 11px; }
+.parallel-composer-heading label { font-weight: 600; color: #6f5d8d; }
+.parallel-composer-heading > span { font-size: 10px; color: #9d92ad; }
+.parallel-composer .composer-input { padding: 4px 8px 4px 12px; }
+.parallel-composer .composer-input textarea { font-size: 12px; }
+.parallel-starters { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.parallel-starters button { padding: 6px 9px; border: 1px solid #ece6f5; border-radius: 5px; color: #9982b7; font-size: 10px; background: #fcfaff; }
+.parallel-starters button:hover { border-color: #cdb8e5; }
+.parallel-retry { display: flex; align-items: center; flex-wrap: wrap; gap: 7px 12px; margin-top: 12px; font-size: 10px; color: #a17464; line-height: 1.7; }
+.parallel-retry .text-button { margin-left: auto; }
+.parallel-footnote { display: flex; align-items: flex-start; gap: 6px; font-size: 9px; color: #a59db1; line-height: 1.8; margin-top: 14px; }
+@media (max-width: 1190px) {
+  .parallel-column-header { gap: 8px; padding: 14px; }
+  .parallel-column-header h3 { font-size: 12px; }
+  .parallel-column-header .model-symbol { width: 30px; height: 30px; }
+  .parallel-column-header .turn-count { display: none; }
+  .parallel-active .page-heading h1 { font-size: 23px; }
+  .parallel-chat-body { padding: 12px; }
+}
+@media (max-width: 720px) {
+  .parallel-active .page-content { padding-top: 18px; }
+  .parallel-active .page-heading h1 { font-size: 23px; }
+  .parallel-active .toolbar { gap: 10px; flex-wrap: wrap; }
+  .parallel-intro { align-items: flex-start; gap: 12px; }
+  .parallel-intro h2 { font-size: 16px; }
+  .parallel-intro > .button { font-size: 9px; padding: 6px; min-height: 30px; }
+  .parallel-intro > .button svg { display: none; }
+  .parallel-grid { gap: 10px; }
+  .parallel-column-header { padding: 11px 8px; gap: 6px; }
+  .parallel-column-header .model-symbol { display: none; }
+  .parallel-column-header h3 { font-size: 11px; }
+  .parallel-column-header p { font-size: 8px; }
+  .parallel-chat-body { height: 330px; padding: 8px; }
+  .parallel-chat-body .message-content { max-width: 100%; min-width: 0; }
+  .parallel-chat-body .message-bubble { font-size: 11px; padding: 8px; line-height: 1.7; }
+  .parallel-chat-body .message-label { font-size: 8px; }
+  .parallel-empty { padding: 8px; gap: 10px; }
+  .parallel-empty p { font-size: 10px; }
+  .parallel-empty h4 { font-size: 11px; }
+  .parallel-inspector > summary { padding: 11px 8px; font-size: 9px; gap: 4px; flex-wrap: wrap; }
+  .parallel-inspector > summary span { margin-left: 0; }
+  .parallel-inspector > summary strong { flex: 1; }
+  .parallel-inspector-body { padding: 0 9px 12px; }
+  .parallel-inspector-body .technical-stats > div { flex-direction: column; gap: 4px; }
+  .parallel-inspector-body .decision-summary { flex-wrap: wrap; font-size: 9px; }
+  .parallel-inspector-body .solo-action { flex-wrap: wrap; }
+  .parallel-composer { padding: 12px; }
+  .parallel-engineering-heading > span { margin-left: 0; }
+  .parallel-composer-heading { font-size: 11px; }
+  .parallel-composer-heading > span { font-size: 9px; }
+  .parallel-composer .composer-footer { font-size: 8px; flex-wrap: wrap; }
+  .parallel-handoff { padding: 9px; font-size: 9px; }
+  .parallel-handoff svg { display: none; }
+}
